@@ -1,0 +1,7 @@
+{
+  "name": "NKLessonTwo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
