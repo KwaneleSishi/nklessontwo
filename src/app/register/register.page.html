@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="gray">
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="flex-center">
+    <div class="responsive-container">
+      <ion-card> 
+        <ion-card-header>
+          <ion-card-title>Personal Information</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-input label="Name:" labelPlacement="floating" placeholder="Enter text" type="text" [(ngModel)]="name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Surname:" labelPlacement="floating" placeholder="Enter text" type="surname" [(ngModel)]="surname"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Email:" labelPlacement="floating" placeholder="Enter text" type="email" [(ngModel)]="email"></ion-input>
+          </ion-item> 
+          <ion-item>
+            <ion-input label="Password:" labelPlacement="floating" placeholder="Enter text" type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <input type="file" (change)="onFileSelected($event)" />
+          </ion-item>
+        </ion-card-content>
+      </ion-card> 
+    
+      
+      <ion-button color="success" size="default" (click)="register()">Register</ion-button>
+      
+    </div>
+  </div>
+</ion-content>

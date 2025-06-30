@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="flex-center">
+    <ion-card class="responsive-card">
+      <img   src="https://docs-demo.ionic.io/assets/madison.jpg"
+      alt="The Wisconsin State Capitol building in Madison, WI at night"/>
+      <ion-card-header>
+        <ion-card-title color="success">Login </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input label="Email" labelPlacement="floating" placeholder="Enter text" type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Password" labelPlacement="floating" placeholder="Enter text" type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-button color="dark" fill="clear" size="full"   routerLink="/forgot-password"  >Forget Email/Password</ion-button>
+        <ion-button color="success" size="full" (click)="login()">Login</ion-button>
+        <ion-button color="success" fill="clear" size="full" routerLink="/register">Register</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

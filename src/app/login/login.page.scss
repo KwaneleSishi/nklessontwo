@@ -1,0 +1,18 @@
+ion-button[color="dark"]{
+    text-transform: initial;
+}
+ 
+ion-content{
+    --background:gray;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .responsive-card {
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+  }
