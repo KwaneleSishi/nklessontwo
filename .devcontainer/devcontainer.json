@@ -1,0 +1,28 @@
+{
+  "name": "Ionic Angular",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/ionic-cli:2": {}
+  },
+  "postCreateCommand": "npm install -g @ionic/cli @angular/cli @capacitor/cli && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "angular.ng-template",
+        "streetsidesoftware.code-spell-checker",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "forwardPorts": [8100, 4200],
+  "portsAttributes": {
+    "8100": {
+      "label": "Ionic Server",
+      "onAutoForward": "openBrowser"
+    },
+    "4200": {
+      "label": "Angular Server",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
